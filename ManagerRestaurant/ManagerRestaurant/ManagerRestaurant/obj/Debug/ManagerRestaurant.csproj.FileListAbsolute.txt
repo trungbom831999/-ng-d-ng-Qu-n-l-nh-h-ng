@@ -1,0 +1,41 @@
+C:\Users\Admin\source\repos\ManagerRestaurant\ManagerRestaurant\bin\Debug\ManagerRestaurant.exe.config
+C:\Users\Admin\source\repos\ManagerRestaurant\ManagerRestaurant\bin\Debug\ManagerRestaurant.exe
+C:\Users\Admin\source\repos\ManagerRestaurant\ManagerRestaurant\bin\Debug\ManagerRestaurant.pdb
+C:\Users\Admin\source\repos\ManagerRestaurant\ManagerRestaurant\obj\Debug\ManagerRestaurant.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\ManagerRestaurant\ManagerRestaurant\obj\Debug\ManagerRestaurant.Login.resources
+C:\Users\Admin\source\repos\ManagerRestaurant\ManagerRestaurant\obj\Debug\ManagerRestaurant.Properties.Resources.resources
+C:\Users\Admin\source\repos\ManagerRestaurant\ManagerRestaurant\obj\Debug\ManagerRestaurant.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\ManagerRestaurant\ManagerRestaurant\obj\Debug\ManagerRestaurant.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\ManagerRestaurant\ManagerRestaurant\obj\Debug\ManagerRestaurant.exe
+C:\Users\Admin\source\repos\ManagerRestaurant\ManagerRestaurant\obj\Debug\ManagerRestaurant.pdb
+C:\Users\Admin\source\repos\ManagerRestaurant\ManagerRestaurant\obj\Debug\ManagerRestaurant.TableManager.resources
+C:\Users\Admin\source\repos\ManagerRestaurant\ManagerRestaurant\obj\Debug\ManagerRestaurant.AccountInfo.resources
+C:\Users\Admin\source\repos\ManagerRestaurant\ManagerRestaurant\obj\Debug\ManagerRestaurant.Manager.resources
+D:\Project II\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\bin\Debug\ManagerRestaurant.exe.config
+D:\Project II\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\bin\Debug\ManagerRestaurant.exe
+D:\Project II\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\bin\Debug\ManagerRestaurant.pdb
+D:\Project II\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\obj\Debug\ManagerRestaurant.csprojAssemblyReference.cache
+D:\Project II\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\obj\Debug\ManagerRestaurant.AccountInfo.resources
+D:\Project II\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\obj\Debug\ManagerRestaurant.Login.resources
+D:\Project II\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\obj\Debug\ManagerRestaurant.Manager.resources
+D:\Project II\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\obj\Debug\ManagerRestaurant.Properties.Resources.resources
+D:\Project II\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\obj\Debug\ManagerRestaurant.TableManager.resources
+D:\Project II\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\obj\Debug\ManagerRestaurant.csproj.GenerateResource.cache
+D:\Project II\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\obj\Debug\ManagerRestaurant.csproj.CoreCompileInputs.cache
+D:\Project II\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\obj\Debug\ManagerRestaurant.exe
+D:\Project II\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\obj\Debug\ManagerRestaurant.pdb
+E:\Project II(hết series)\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\bin\Debug\ManagerRestaurant.exe.config
+E:\Project II(hết series)\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\bin\Debug\ManagerRestaurant.exe
+E:\Project II(hết series)\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\bin\Debug\ManagerRestaurant.pdb
+E:\Project II(hết series)\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\obj\Debug\ManagerRestaurant.csprojAssemblyReference.cache
+E:\Project II(hết series)\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\obj\Debug\ManagerRestaurant.AccountInfo.resources
+E:\Project II(hết series)\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\obj\Debug\ManagerRestaurant.Login.resources
+E:\Project II(hết series)\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\obj\Debug\ManagerRestaurant.Manager.resources
+E:\Project II(hết series)\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\obj\Debug\ManagerRestaurant.Properties.Resources.resources
+E:\Project II(hết series)\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\obj\Debug\ManagerRestaurant.TableManager.resources
+E:\Project II(hết series)\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\obj\Debug\ManagerRestaurant.csproj.GenerateResource.cache
+E:\Project II(hết series)\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\obj\Debug\ManagerRestaurant.csproj.CoreCompileInputs.cache
+E:\Project II(hết series)\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\obj\Debug\ManagerRestaurant.exe
+E:\Project II(hết series)\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\obj\Debug\ManagerRestaurant.pdb
+E:\Project II(hết series)\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\obj\Debug\Interop.LCC11.dll
+E:\Project II(hết series)\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\obj\Debug\ManagerRestaurant.csproj.ResolveComReference.cache

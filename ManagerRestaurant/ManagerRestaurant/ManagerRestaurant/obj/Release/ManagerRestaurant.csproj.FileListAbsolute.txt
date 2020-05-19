@@ -1,0 +1,12 @@
+D:\Project II\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\bin\Release\ManagerRestaurant.exe.config
+D:\Project II\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\bin\Release\ManagerRestaurant.exe
+D:\Project II\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\bin\Release\ManagerRestaurant.pdb
+D:\Project II\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\obj\Release\ManagerRestaurant.AccountInfo.resources
+D:\Project II\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\obj\Release\ManagerRestaurant.Login.resources
+D:\Project II\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\obj\Release\ManagerRestaurant.Manager.resources
+D:\Project II\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\obj\Release\ManagerRestaurant.Properties.Resources.resources
+D:\Project II\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\obj\Release\ManagerRestaurant.TableManager.resources
+D:\Project II\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\obj\Release\ManagerRestaurant.csproj.GenerateResource.cache
+D:\Project II\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\obj\Release\ManagerRestaurant.csproj.CoreCompileInputs.cache
+D:\Project II\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\obj\Release\ManagerRestaurant.exe
+D:\Project II\ManagerRestaurant\ManagerRestaurant\ManagerRestaurant\obj\Release\ManagerRestaurant.pdb

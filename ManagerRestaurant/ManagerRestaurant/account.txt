@@ -1,0 +1,5 @@
+admin: n
+pass: 1
+
+staff: k
+pass: 1
