@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TableManager));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thongTinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -138,7 +139,7 @@
             // columnHeader3
             // 
             this.columnHeader3.Text = "Đơn giá";
-            this.columnHeader3.Width = 139;
+            this.columnHeader3.Width = 117;
             // 
             // columnHeader4
             // 
@@ -303,6 +304,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "TableManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

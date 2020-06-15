@@ -44,7 +44,7 @@ namespace ManagerRestaurant.DAO
 
         public DataTable GetListTable()
         {
-            return DataProvider.Instance.ExecuteQuery("Select * From TableInfo Where type = 1");
+            return DataProvider.Instance.ExecuteQuery("Select id, name, statusTable From TableInfo Where type = 1");
         }
 
         public bool InsertTable(string name)

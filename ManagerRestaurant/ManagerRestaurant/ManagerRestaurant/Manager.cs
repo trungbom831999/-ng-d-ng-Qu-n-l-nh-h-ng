@@ -40,6 +40,7 @@ namespace ManagerRestaurant
 
             LoadDateTimePicker();
             LoadListBillByDateAndPage(dateTimePickerCheckIn.Value, dateTimePickerCheckOut.Value, 1);
+            LoadSumBill(dateTimePickerCheckIn.Value, dateTimePickerCheckOut.Value);
             LoadListFood();
             LoadCategoryIntoCombobox(comboBoxCategory);
             LoadAccount();
@@ -69,6 +70,11 @@ namespace ManagerRestaurant
         void DetailBill()
         {
             textBoxIdBill.DataBindings.Add(new Binding("Text", dataGridViewBill.DataSource, "id", true, DataSourceUpdateMode.Never));
+        }
+
+        void LoadSumBill(DateTime checkIn, DateTime checkOut)
+        {
+            textBoxSum.Text = BillDAO.Instance.SumBill(checkIn, checkOut).ToString("#,000");
         }
 
         /*bản cũ
@@ -165,7 +171,7 @@ namespace ManagerRestaurant
             }
             else
             {
-                MessageBox.Show(string.Format("Thêm tài khoản Không thành công!/nCó thể trùng tên đăng nhập"), "Thông báo");
+                MessageBox.Show(string.Format("Thêm tài khoản Không thành công!\nCó thể trùng tên đăng nhập"), "Thông báo");
             }
 
             LoadAccount();
@@ -179,7 +185,7 @@ namespace ManagerRestaurant
             }
             else
             {
-                MessageBox.Show(string.Format("Sửa tài khoản Không thành công!/nKhông thể sửa tên đăng nhập"), "Thông báo");
+                MessageBox.Show(string.Format("Sửa tài khoản Không thành công!\nKhông thể sửa tên đăng nhập"), "Thông báo");
             }
 
             LoadAccount();
@@ -312,7 +318,7 @@ namespace ManagerRestaurant
 
         void DeletePermanCategory(int id)
         {
-            if (MessageBox.Show(string.Format("Bạn có chắc chắn muốn xóa thể loại này?\nHành động này sẽ xóa tất cả món ăn trong thể loại này"), "Thông báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            if (MessageBox.Show(string.Format("Bạn có chắc chắn muốn xóa thể loại này?\nHành động này sẽ xóa tất cả món ăn trong thể loại này"), "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
             {                
                 if (CategoryDAO.Instance.DeletePermanCategory(id))
                 {
@@ -424,6 +430,7 @@ namespace ManagerRestaurant
         private void buttonShowBill_Click(object sender, EventArgs e)
         {
             LoadListBillByDateAndPage(dateTimePickerCheckIn.Value, dateTimePickerCheckOut.Value, 1);
+            LoadSumBill(dateTimePickerCheckIn.Value, dateTimePickerCheckOut.Value);
             textBoxBillPage.Text = "1";
             listViewBill.Items.Clear();
         }
@@ -741,10 +748,5 @@ namespace ManagerRestaurant
             remove { ReTab -= value; }
         }
         #endregion
-
-        private void label18_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

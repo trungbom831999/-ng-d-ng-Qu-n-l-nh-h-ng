@@ -271,11 +271,11 @@ End;
 
 Alter Table Bill Add totalPrice nvarchar(100);
 
-Create Proc USP_GetListBillByDate
+Alter Proc USP_GetListBillByDate
 @checkIn date, @checkOut date
 As
 Begin
-	Select Distinct Bill.id, dateCheckIn as [Ngày vào], dateCheckOut as [Ngày ra], totalPrice as [Tổng hóa đơn]
+	Select Distinct Bill.id, dateCheckIn as [Ngày vào], dateCheckOut as [Ngày ra], totalPrice
 	From Bill
 	Where dateCheckIn >= @checkIn and dateCheckOut <= @checkOut
 	and statusBill = 1;

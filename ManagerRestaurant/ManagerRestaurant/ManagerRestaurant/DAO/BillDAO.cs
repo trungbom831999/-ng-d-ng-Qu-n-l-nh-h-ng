@@ -60,6 +60,17 @@ namespace ManagerRestaurant.DAO
             return DataProvider.Instance.ExecuteQuery("Exec USP_GetListBillByDate @checkIn , @checkOut", new object[] { checkIn, checkOut });
         }
 
+        public float SumBill(DateTime checkIn, DateTime checkOut)
+        {
+            DataTable data = DataProvider.Instance.ExecuteQuery("Exec USP_GetListBillByDate @checkIn , @checkOut", new object[] { checkIn, checkOut });
+            float sum = 0;
+            foreach(DataRow item in data.Rows)
+            {
+                sum += (float)Convert.ToDouble(item["totalPrice"].ToString());
+            }
+            return sum;
+        }
+
         public DataTable GetBillListByDateAndPage(DateTime checkIn, DateTime checkOut, int page)
         {
             return DataProvider.Instance.ExecuteQuery("Exec USP_GetListBillByDateAndPage @checkIn , @checkOut , @page", new object[] { checkIn, checkOut, page });

@@ -346,7 +346,8 @@ namespace ManagerRestaurant
         private void buttonAddFood_Click(object sender, EventArgs e)
         {
             Table table = listViewBill.Tag as Table;
-            if(table == null)
+            
+            if (table == null)
             {
                 MessageBox.Show("Vui lòng chọn bàn", "Thông báo");
                 return;
@@ -355,19 +356,50 @@ namespace ManagerRestaurant
             int idBill = BillDAO.Instance.GetUncheckBillIdByTableId(table.Id);
             int idFood = (comboBoxFood.SelectedItem as Food).Id;
             int count = (int)numericCountFood.Value;
+            int check = 1;
 
-            if(idBill == -1) //Bill mới
+            if (count <= 0)
             {
-                BillDAO.Instance.InsertBill(table.Id);
-                BillInfoDAO.Instance.InsertBillInfo(BillDAO.Instance.GetMaxId(), idFood, count);
-            }
-            else
-            {
-                BillInfoDAO.Instance.InsertBillInfo(idBill, idFood, count);
+                string nameFood = (comboBoxFood.SelectedItem as Food).Name;
+                List<DTO.Menu> listMenu = MenuDAO.Instance.GetListMenuOfTable(table.Id);
+                int countFood = 0;
+                foreach (DTO.Menu item in listMenu)
+                {
+                    string nameCheck = item.FoodName.ToString();
+                    countFood++;
+                    
+                    if (String.Compare(nameCheck, nameFood, false) != 0)
+                    {
+                        check = 0;
+                    }
+                    else
+                    {
+                        check = 1;
+                        break;
+                    }
+                }
+                if (countFood == 0 || count == 0)
+                {
+                    check = 0;
+                }
             }
 
-            ShowBill(table.Id);
-            LoadTable();
+            if (check == 1)
+            {
+                if (idBill == -1) //Bill mới
+                {
+                    BillDAO.Instance.InsertBill(table.Id);
+                    BillInfoDAO.Instance.InsertBillInfo(BillDAO.Instance.GetMaxId(), idFood, count);
+                    ShowBill(table.Id);
+                    LoadTable();
+                }
+                else
+                {
+                    BillInfoDAO.Instance.InsertBillInfo(idBill, idFood, count);
+                    ShowBill(table.Id);
+                    LoadTable();
+                }
+            }
         }
 
         private void buttonCheckOut_Click(object sender, EventArgs e)
@@ -384,20 +416,25 @@ namespace ManagerRestaurant
 
             if (idBill != -1)
             {
-                if(MessageBox.Show(string.Format("Bạn muốn thanh toán {0}\nTổng tiền: {1}", table.Name, textBoxTotalPrice.Text), "Thông báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                float totalPrice = 0; //tổng hóa đơn
+                int countFood = 0;
+
+                List<DTO.Menu> listMenu = MenuDAO.Instance.GetListMenuOfTable(table.Id);
+
+                foreach (DTO.Menu item in listMenu)
                 {
-                    float totalPrice = 0; //tổng hóa đơn
-
-                    List<DTO.Menu> listMenu = MenuDAO.Instance.GetListMenuOfTable(table.Id);
-
-                    foreach (DTO.Menu item in listMenu)
+                    countFood++;
+                    totalPrice += item.TotalPrice;
+                }
+                if (countFood > 0)
+                {
+                    if (MessageBox.Show(string.Format("Bạn muốn thanh toán {0}\nTổng tiền: {1}", table.Name, textBoxTotalPrice.Text), "Thông báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
                     {
-                        totalPrice += item.TotalPrice;
+                        ExportBill(idBill);
+                        BillDAO.Instance.CheckOut(idBill, totalPrice);
+                        ShowBill(table.Id);
+                        LoadTable();
                     }
-                    ExportBill(idBill);
-                    BillDAO.Instance.CheckOut(idBill, totalPrice);
-                    ShowBill(table.Id);
-                    LoadTable();
                 }
             }
 
